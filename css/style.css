@@ -48,7 +48,7 @@ p{
 
 .views-text, .cuisine-text, .about-text{
   border-top: solid 4px #F8BC24;
-  padding: 0px 25px;
+  padding: 15px 25px;
   text-align: center;
   margin: 40px;
 }
@@ -143,6 +143,10 @@ a.skip:focus{
   height: 360px;
   perspective: 1000px;
   padding: 25px 0px;
+}
+
+.flip-card:focus .flip-card-inner{
+  transform: rotateY(180deg);
 }
 
 .flip-card-inner {
@@ -285,6 +289,54 @@ img{
   padding-top: 40px;
 }
 
+input[type=text], input[type=email]{
+  width: 75%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-size: 18px;
+  font-family: "Avenir";
+}
+
+input[type=submit] {
+  background-color: #F8BC24;
+  color: black;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Avenir";
+}
+
+input[type=submit]:hover {
+  background-color: #7FD7FD;
+  font-weight: bold;
+}
+
+.name, .email, .message{
+  padding-right: 15px;
+  font-size: 22px;
+}
+
+.contact-name, .contact-email, .contact-message{
+  padding-bottom: 20px;
+  margin-top: 30px;
+}
+
+.contact-info{
+  margin-left: 30px;
+}
+
+.submit{
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
 @media screen and (min-width: 768px){
   h1{
     font-size: 50px;
@@ -382,6 +434,7 @@ img{
   .views-text, .cuisine-text, .about-text{
     border-left: solid 4px #F8BC24;
     border-top: none;
+    padding-top: 0px;
     padding-left: 30px;
     text-align: left;
     width: 700px;
@@ -406,6 +459,10 @@ img{
 
   .flip-card{
     padding: 15px 15px;
+  }
+
+  input[type=text], input[type=email]{
+    width: 55%;
   }
 
   /* Keyframes for plane animation */

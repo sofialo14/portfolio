@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type= "text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Prata&display=swap" rel="stylesheet">
     <title>Contact</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160747982-1"></script>
@@ -18,9 +19,10 @@
   <body>
     <a class = "skip" href="#skip">Jump to Content</a>
     <header>
+      <img src="images/logo.png" alt="airplane logo" id = "plane">
       <nav class="nav-list">
         <a class="nav-item" href="home.html">Home</a>
-        <a class="nav-item" href="about.html">About</a>
+        <a class="nav-item" href="about.html">About Me</a>
         <a class="nav-item" href="views.html">Views</a>
         <a class="nav-item" href="cuisine.html">Cuisine</a>
         <a class="nav-item current" href="contact.html">Contact</a>
@@ -30,25 +32,24 @@
       <div class="contact-info">
         <h1>Have any questions?</h1>
         <form action="https://formspree.io/xgeyaekk" method="POST">
-          <fieldset>
-            <legend>User Contact Data</legend>
-            <br>
-            <div class="contact-email">
-              <label for="email">Email:</label><input type="email" name="email" id="email" required/>
-            </div>
-            <div class="contact-message">
-              <label for="message">Message:</label><input type="text" name="message" id=
-              "message" required/>
-            </div>
-            <div>
-              <input type="submit" value="Submit">
-            </div>
-          </fieldset>
+          <div class="contact-name">
+            <label for="name" class="name">Name:</label><input type="text" name="name" placeholder="Enter your name" id="name" required/>
+          </div>
+          <div class="contact-email">
+            <label for="email" class="email">Email:</label><input type="email" name="email" placeholder="Enter your email" id="email" required/>
+          </div>
+          <div class="contact-message">
+            <label for="message" class="message">Message:</label><input type="text" name="message" placeholder="Write your message" id=
+            "message" required/>
+          </div>
+          <div class="submit">
+            <input type="submit" value="Submit">
+          </div>
         </form>
       </div>
     </main>
     <footer>
-      <p>&copy; Sofia Lotsoff</p>
+      <p class="footer">&copy; Sofia Lotsoff</p>
     </footer>
   </body>
 </html>
